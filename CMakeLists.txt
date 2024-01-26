@@ -28,7 +28,7 @@ add_executable(lgfx_simulator ${Target_Files})
 target_include_directories(${PROJECT_NAME} PUBLIC "./LovyanGFX/src/")
 
 find_package(SDL2 REQUIRED SDL2)
-include_directories(&{SDL2_INCLUDE_DIRS})
+include_directories(${SDL2_INCLUDE_DIRS})
 target_link_libraries(${PROJECT_NAME} -lpthread ${SDL2_LIBRARIES})
 
 target_compile_features(${PROJECT_NAME} PUBLIC cxx_std_17)
