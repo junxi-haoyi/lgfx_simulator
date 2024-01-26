@@ -19,7 +19,7 @@ file(GLOB Target_Files RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} CMAKE_CONFIGURE_DEPE
     ./LovyanGFX/src/lgfx/v1/platforms/sdl/*.cpp
 )
 
-aux_source_directory(${CMAKE_CURRENT_SOURCE_DIR}/LovyanGFX S)
+# aux_source_directory(${CMAKE_CURRENT_SOURCE_DIR}/LovyanGFX S)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/inc)
 
